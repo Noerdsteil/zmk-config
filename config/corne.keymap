@@ -13,7 +13,26 @@
 #define RAISE   2
 #define NAV     3
 
+// todo:
+// experiment with tapping-term-ms
+// try balanced vs tap-preferred
+
+&lt {
+    quick-tap-ms = <100>;
+    flavor = "balanced";
+};
+
 / {
+      behaviors {
+        hm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <100>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
@@ -21,7 +40,7 @@
 //,----------------------------------------------------------------------.            ,----------------------------------------------------------------------.
     &kp TAB         &kp Q       &kp W        &kp E         &kp R   &kp T               &kp Y       &kp U          &kp I       &kp O           &kp P   &kp DEL
 //|---------+-------------+-----------+------------+-------------+-------|            |------+-------------+------------+-----------+---------------+--------|
-    &kp ESC   &mt LCTRL A   &mt LALT S  &mt LCMD D   &mt LSHFT F   &kp G               &kp H   &mt RSHFT J   &mt RCMD K   &mt RALT L  &mt RCTL SEMI   &kp SQT
+    &kp ESC   &hm LCTRL A   &hm LALT S  &hm LCMD D   &hm LSHFT F   &kp G               &kp H   &hm RSHFT J   &hm RCMD K   &hm RALT L  &hm RCTL SEMI   &kp SQT
 //|---------+-------------+-----------+------------+-------------+-------|            |------+-------------+------------+-----------+---------------+--------|
    &kp BSLH         &kp Z       &kp X        &kp C         &kp V   &kp B               &kp N       &kp M      &kp COMMA     &kp DOT        &kp FSLH   &trans
 //|---------+-------------+-----------+------------+-------------+-------+----|  |----+------+-------------+------------+-----------+---------------+--------|
@@ -34,7 +53,7 @@
 //,------------------------------------------------------------.            ,---------------------------------------------------------------------------------.
    &gresc      &kp N1    &kp N2     &kp N3      &kp N4   &kp N5              &kp N6           &kp N7          &kp N8          &kp N9           &kp N0   &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
-   &trans   &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &trans   &mt RSHFT RBKT   &mt RCMD LBKT   &mt RALT MINUS  &mt RCTL EQUAL   &trans
+   &trans   &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &trans   &hm RSHFT RBKT   &hm RCMD LBKT   &hm RALT MINUS  &hm RCTL EQUAL   &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
    &trans      &trans    &trans     &trans      &trans   &trans              &trans           &trans          &trans          &trans           &trans   &trans
 //|-------+-----------+---------+----------+-----------+-------+----|  |----+------+-----------------+---------------+---------------+----------------+-------|
