@@ -16,6 +16,12 @@
 // todo:
 // experiment with tapping-term-ms
 // try balanced vs tap-preferred
+// try caps-word
+// emoji key: LCMD(LCTRL(SPACE))
+
+// make dongle work.
+// https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/corne
+// https://github.com/aroum/zmk-enki42-dongle
 
 &lt {
     quick-tap-ms = <100>;
