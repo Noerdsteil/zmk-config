@@ -28,6 +28,10 @@
     flavor = "balanced";
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
       behaviors {
         hm: balanced_homerow_mods {
@@ -59,7 +63,7 @@
 //,------------------------------------------------------------.            ,---------------------------------------------------------------------------------.
    &trans      &kp N1    &kp N2     &kp N3      &kp N4   &kp N5              &kp N6           &kp N7          &kp N8          &kp N9           &kp N0   &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
-   &trans   &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &trans   &hm RSHFT RBKT   &hm RCMD LBKT   &hm RALT MINUS  &hm RCTL EQUAL   &trans
+   &caps_word  &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &trans   &hm RSHFT RBKT   &hm RCMD LBKT   &hm RALT MINUS  &hm RCTL EQUAL   &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
    &trans      &trans    &trans     &trans      &trans   &trans              &trans           &trans          &trans          &trans           &trans   &trans
 //|-------+-----------+---------+----------+-----------+-------+----|  |----+------+-----------------+---------------+---------------+----------------+-------|
