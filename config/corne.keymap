@@ -93,7 +93,7 @@
 //,-----------------------------------------------------------------.            ,----------------------------------------------------------.
    &kp C_RESET      &trans    &trans     &trans      &trans   &trans                &trans     &trans   &trans      &trans   &trans   &trans
 //|------------+-----------+---------+----------+-----------+-------|            |---------+----------+--------+-----------+--------+-------|
-    &trans       &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans               &trans   &kp LEFT   &kp DOWN   &kp UP   &RIGHT   &trans
+    &trans       &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &trans   &trans
 //|------------+-----------+---------+----------+-----------+-------|            |---------+----------+--------+-----------+--------+-------|
     &trans          &trans    &trans     &trans      &trans   &trans                &trans     &trans   &trans      &trans   &trans   &trans
 //|------------+-----------+---------+----------+-----------+-------+----|  |----+---------+----------+--------+-----------+--------+-------|
