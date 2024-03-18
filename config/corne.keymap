@@ -52,13 +52,13 @@
                 default_layer {
                         bindings = <
 //,----------------------------------------------------------------------.            ,----------------------------------------------------------------------.
-    &kp TAB         &kp Q       &kp W        &kp E         &kp R   &kp T               &kp Y       &kp U          &kp I       &kp O           &kp P   &kp DEL
+    &kp ESC         &kp Q       &kp W        &kp E         &kp R   &kp T               &kp Y       &kp U          &kp I       &kp O           &kp P   &kp BSPC
 //|---------+-------------+-----------+------------+-------------+-------|            |------+-------------+------------+-----------+---------------+--------|
-    &kp ESC   &tm LCTRL A   &tm LALT S  &tm LCMD D   &hm LSHFT F   &kp G               &kp H   &hm RSHFT J   &tm RCMD K   &tm RALT L  &tm RCTL SEMI   &kp SQT
+    &kp TAB   &tm LCTRL A   &tm LALT S  &tm LCMD D   &hm LSHFT F   &kp G               &kp H   &hm RSHFT J   &tm RCMD K   &tm RALT L  &tm RCTL SEMI   &kp SQT
 //|---------+-------------+-----------+------------+-------------+-------|            |------+-------------+------------+-----------+---------------+--------|
    &kp BSLH         &kp Z       &kp X        &kp C         &kp V   &kp B               &kp N       &kp M      &kp COMMA     &kp DOT        &kp FSLH   &trans
 //|---------+-------------+-----------+------------+-------------+-------+----|  |----+------+-------------+------------+-----------+---------------+--------|
-                                    &mo NAV   &lt RAISE BSPC &lt LOWER SPACE        &lt LOWER SPACE   &lt RAISE RET   &tm LALT
+                                    &mo NAV   &lt RAISE BSPC &lt LOWER SPACE        &lt LOWER SPACE   &lt RAISE RET   &kp LALT
                                  //`--------+-----------------+---------------'  `---------------+-----------------+------------------'LG(LC(SPACE))
                         >;
                 };
