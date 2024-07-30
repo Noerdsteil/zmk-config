@@ -67,9 +67,9 @@
 //,------------------------------------------------------------.            ,---------------------------------------------------------------------------------.
    &kp GRAVE   &kp N1    &kp N2     &kp N3      &kp N4   &kp N5              &kp N6           &kp N7          &kp N8          &kp N9           &kp N0   &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
-   &caps_word  &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans              &trans   &hm RSHFT RBKT   &hm RCMD LBKT   &hm RALT MINUS  &hm RCTL EQUAL   &trans
+   &caps_word  &kp LCTRL   &kp LALT  &kp LCMD   &kp LSHFT   &trans           &kp EQUAL   &hm RSHFT SQT   &hm RCMD DQT   &hm RALT LBKT     &hm RCTL RBKT  &trans
 //|-------+-----------+---------+----------+-----------+-------|            |------+-----------------+---------------+---------------+----------------+-------|
-   &trans      &trans    &trans     &trans      &trans   &trans             &kp LS(EQUAL)    &kp EQUAL     &trans       &trans       &trans        &trans
+   &trans      &trans    &trans     &trans      &trans   &trans             &kp LS(EQUAL)    &kp LS(N9)    &kp LS(N0)        &trans       &trans        &trans
 //|-------+-----------+---------+----------+-----------+-------+----|  |----+------+-----------------+---------------+---------------+----------------+-------|
                                        &trans   &kp SPACE   &kp BSPC    &kp RET   &kp SPACE   &trans
                                     //`-------+-----------+---------'  `--------+-----------+-------'
