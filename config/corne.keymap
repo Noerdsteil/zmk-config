@@ -6,7 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include "keys_dvorak.h"
+#include "keys_de.h"
 
 #define DEFAULT 0
 #define LOWER   1
@@ -70,7 +70,7 @@
 
         raise_layer {
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5      &kp F6   &kp N4     &kp N5  &kp N6  &trans  &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5      &kp DE_A_UMLAUT   &kp N4     &kp N5  &kp N6  &trans  &trans
 &trans   &trans  &trans  &trans  &trans     &trans      &trans   &kp N1     &kp N2  &kp N3  &trans  &trans
 &trans   &trans  &trans  &trans  &trans     &trans      &trans   &kp N7     &kp N8  &kp N9  &trans  &trans
                          &trans  &kp SPACE  &kp BSPC    &kp RET  &kp SPACE  &kp N0
