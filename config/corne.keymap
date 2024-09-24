@@ -53,14 +53,19 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
+
             // long press will forward the key to the umlaut macro
+
             bindings = <&umlaut>, <&kp>;
         };
+
         umlaut_unshifted: umlaut_unshifted {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LA(U)>, <&kp LA(U)>;
+
             // the mod-morph will prevent the shift modifier from being sent while sending the umlaut shortcut
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -93,7 +98,9 @@
         umlaut: umlaut {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
+
             // use the mod-morph behavior to send the umlaut shortcut and then tap the given parameter key
+
             bindings =
                 <&umlaut_unshifted>,
                 <&macro_tap>,
@@ -106,7 +113,7 @@
 
         default_layer {
             bindings = <
-&mt K_COPY ESC   &kp Q        &kp W       &tm LS(LA(N2)) E  &kp R           &kp T              &kp Z        &um U U          &um A I       &um O O       &kp P           &kp BSPC
+&mt K_COPY ESC   &kp Q        &kp W       &tm LS(LA(N2)) E  &kp R           &kp T              &kp Z        &um U U        &um A I     &um O O     &kp P           &kp BSPC
 &mt K_PASTE TAB  &tm LCTRL A  &tm LALT S  &tm LCMD D        &hm LSHFT F     &kp G              &kp H        &hm RSHFT J    &tm RCMD K  &tm RALT L  &tm RCTRL SEMI  &kp SQT
 &kp BSLH         &kp Y        &kp X       &kp C             &kp V           &kp B              &kp N        &kp M          &kp COMMA   &kp DOT     &kp FSLH        &kp C_PLAY_PAUSE
                                           &mo NAV           &lt RAISE BSPC  &lt LOWER SPACE    &lt 4 SPACE  &lt RAISE RET  &kp LALT
@@ -115,7 +122,7 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2            &kp N3                &kp N4      &kp N5       &kp N6         &kp N7          &kp N8                 &kp N9                 &kp N0           &trans
+&kp GRAVE   &kp N1     &kp N2            &kp N3                &kp N4      &kp N5       &kp N6         &kp N7          &kp N8                 &kp N9                 &kp N0           &kp DELETE
 &caps_word  &kp LCTRL  &kp LALT          &kp LCMD              &kp LSHFT   &trans       &kp EQUAL      &hm RSHFT AMPS  &hm RCMD STAR          &hm RALT SINGLE_QUOTE  &hm RCTRL GRAVE  &trans
 &trans      &trans     &kp LEFT_BRACKET  &kp LS(LEFT_BRACKET)  &kp LS(N9)  &trans       &kp LS(EQUAL)  &kp LS(N0)      &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET      &kp MINUS        &trans
                                          &trans                &kp BSPC    &kp SPACE    &kp SPACE      &kp RET         &trans
