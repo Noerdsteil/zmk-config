@@ -22,6 +22,11 @@
     flavor = "balanced";
 };
 
+&led_strip {
+    chain-length = <27>;
+};
+
+
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
